@@ -14,45 +14,22 @@
       padding: 3rem 1.5rem;
     }
     .container { max-width: 640px; margin: 0 auto; }
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
+    h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem;
       background: linear-gradient(135deg, #a78bfa, #60a5fa, #34d399);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     .subtitle { color: #888; font-size: 1.1rem; margin-bottom: 3rem; }
     .project-list { list-style: none; display: flex; flex-direction: column; gap: 1rem; }
-    .project-list li {
-      background: #1a1a1a;
-      border: 1px solid #2a2a2a;
-      border-radius: 12px;
-      padding: 1.25rem 1.5rem;
-      transition: border-color 0.2s, transform 0.2s;
-    }
+    .project-list li { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 12px;
+      padding: 1.25rem 1.5rem; transition: border-color 0.2s, transform 0.2s; }
     .project-list li:hover { border-color: #a78bfa; transform: translateY(-2px); }
     .project-name { font-size: 1.2rem; font-weight: 600; color: #fff; margin-bottom: 0.25rem; }
     .project-desc { font-size: 0.9rem; color: #888; }
-    .project-tag {
-      display: inline-block; margin-top: 0.5rem; padding: 0.2rem 0.6rem;
-      background: #2a2a2a; border-radius: 999px; font-size: 0.75rem; color: #a78bfa;
-    }
-    .email-form { display: flex; gap: 0.5rem; margin-top: 0.75rem; }
-    .email-form input[type="email"] {
-      flex: 1; padding: 0.5rem 0.75rem; border-radius: 8px;
-      border: 1px solid #333; background: #111; color: #e0e0e0;
-      font-size: 0.85rem; outline: none;
-    }
-    .email-form input[type="email"]:focus { border-color: #60a5fa; }
-    .email-form input[type="email"]::placeholder { color: #555; }
-    .email-form button {
-      padding: 0.5rem 1rem; border-radius: 8px; border: none;
-      background: #a78bfa; color: #fff; font-size: 0.85rem;
-      font-weight: 600; cursor: pointer; transition: background 0.2s; white-space: nowrap;
-    }
-    .email-form button:hover { background: #8b6ff0; }
-    .form-msg { font-size: 0.8rem; color: #34d399; margin-top: 0.5rem; display: none; }
+    .project-tag { display: inline-block; margin-top: 0.5rem; padding: 0.2rem 0.6rem;
+      background: #2a2a2a; border-radius: 999px; font-size: 0.75rem; color: #a78bfa; }
+    .early-access-btn { display: inline-block; margin-top: 0.75rem; padding: 0.5rem 1rem;
+      border-radius: 8px; border: none; background: #a78bfa; color: #fff; font-size: 0.85rem;
+      font-weight: 600; cursor: pointer; transition: background 0.2s; text-decoration: none; }
+    .early-access-btn:hover { background: #8b6ff0; }
     footer { margin-top: 4rem; text-align: center; color: #444; font-size: 0.85rem; }
   </style>
 </head>
@@ -65,11 +42,8 @@
         <div class="project-name">Retail Alt Data</div>
         <div class="project-desc">Accessible Alt Data for Main Street</div>
         <span class="project-tag">in progress</span>
-        <form class="email-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed!'; this.querySelector('.form-msg').style.display='block'; this.querySelector('input').disabled=true; this.querySelector('button').disabled=true;">
-          <input type="email" placeholder="you@email.com" required>
-          <button type="submit">Get Early Access</button>
-        </form>
-        <div class="form-msg">Thanks! We'll be in touch.</div>
+        <br>
+        <a href="https://forms.gle/Zm9mGMuwy3L3mtna8" target="_blank" class="early-access-btn">Get Early Access</a>
       </li>
       <li>
         <div class="project-name">Hello World</div>
